@@ -206,6 +206,11 @@ function linkSwitch (link1, link2, link3, link4) {
 				}
 			}
 		}
+		if (link1 === 3) {
+			const formHeight = (document.querySelector('.form').offsetHeight) - 90;
+			console.log(formHeight);
+			document.querySelector('.form').style.maxHeight = `${formHeight}px`;
+		}
 	})
 }
 
