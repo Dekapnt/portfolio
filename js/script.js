@@ -67,6 +67,22 @@ if (switchColor) {
 			for (var i = 0; i < achievementsList.length; i++) {
 				achievementsList[i].style.color = 'rgba(255, 252, 245, 0.7)';
 			}
+			//contact
+			document.querySelector('.contacts').style.backgroundColor = 'rgb(20, 20, 20)';
+			document.querySelector('.contacts__title').style.color = 'rgba(255, 252, 245, 1)';
+			document.querySelector('.contacts__subtitle').style.color = 'rgba(255, 252, 245, 0.8)';
+			const formLabel = document.querySelectorAll('.label');
+			for (var i = 0; i < formLabel.length; i++) {
+				formLabel[i].style.color = 'rgba(255, 252, 245, 1)';
+			}
+			const formInput = document.querySelectorAll('._targerCursor');
+			for (var i = 0; i < formInput.length; i++) {
+				formInput[i].style.backgroundColor = 'rgba(21, 27, 25, 1)';
+				formInput[i].style.color = 'rgba(255, 252, 245, 1)';
+			}
+			document.querySelector('.form__title').style.backgroundColor = 'rgba(21, 27, 25, 1)';
+			document.querySelector('.form__btn').style.backgroundColor = 'rgba(255, 252, 245, 1)';
+			document.querySelector('.form__btn').style.color = 'rgba(0, 2, 1, 1)';
 		} else {
 			switchColor.classList.toggle('active');
 			//header
@@ -109,6 +125,21 @@ if (switchColor) {
 			for (var i = 0; i < achievementsList.length; i++) {
 				achievementsList[i].style.color = '';
 			}
+			//contact
+			document.querySelector('.contacts').style.backgroundColor = '';
+			document.querySelector('.contacts__title').style.color = '';
+			document.querySelector('.contacts__subtitle').style.color = '';
+			const formLabel = document.querySelectorAll('.label');
+			for (var i = 0; i < formLabel.length; i++) {
+				formLabel[i].style.color = '';
+			}
+			const formInput = document.querySelectorAll('._targerCursor');
+			for (var i = 0; i < formInput.length; i++) {
+				formInput[i].style.backgroundColor = '';
+			}
+			document.querySelector('.form__title').style.backgroundColor = '';
+			document.querySelector('.form__btn').style.backgroundColor = '';
+			document.querySelector('.form__btn').style.color = '';
 		}
 		//контентная часть
 		const contentAbout = document.querySelector('.js-content_about');
@@ -385,4 +416,15 @@ if (worksLinksSwichImage4) {
 		e.preventDefault();
 		switchLinkImage(4)
 	})
+}
+
+
+//Проверка валидности кода
+const form = document.querySelector('.form');
+if (form) {
+	form.addEventListener('submit', function(e){
+		e.preventDefault();
+		alert('Временно эта функция не доступна! Простите за неудобства :(');
+		form.reset();
+	});
 }

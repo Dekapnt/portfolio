@@ -24,26 +24,24 @@
 		</header>
 		<aside class="sitebar js-sitebar">
 			<div class="sitebar__fon js-fon"></div>
-			<div class="containerf sitebar__container js-container">
-				<nav class="sitebar__menu">
-					<ul class="sitebar__list">
-						<li>
-							<a href="#" class="sitebar__link _svlActive">Обо мне</a>
-						</li>
-						<li>
-							<a href="#" class="sitebar__link">Работы</a>
-						</li>
-						<li>
-							<a href="#" class="sitebar__link">Резюме</a>
-						</li>
-						<li>
-							<a href="#" class="sitebar__link">Написать мне</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="sitebat__body-switch">
-					<a href="https://gogle.com" class="sitebar__switch js-switch"><span>Switch dark</span></a>
-				</div>
+			<nav class="sitebar__menu">
+				<ul class="sitebar__list">
+					<li>
+						<a href="#" class="sitebar__link _svlActive">Обо мне</a>
+					</li>
+					<li>
+						<a href="#" class="sitebar__link">Работы</a>
+					</li>
+					<li>
+						<a href="#" class="sitebar__link">Резюме</a>
+					</li>
+					<li>
+						<a href="#" class="sitebar__link">Написать мне</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="sitebat__body-switch">
+				<a href="https://gogle.com" class="sitebar__switch js-switch"><span>Switch dark</span></a>
 			</div>
 		</aside>
 		<main class="content js-content_about js-contents">
@@ -52,7 +50,7 @@
 					<h1 class="description__title">Я люблю кодить и искать свои ошибки</h1>
 					<div class="description__subtitle">А еще я люблю кушать... кхм</div>
 					<div class="description__text"><p>Я учусь верстве сайтов уже примерно месяц на момент написание этого сайта. Я достаточно неплохо знаю <span class="description__text_dark">HTML</span>, <span class="description__text_dark">CSS</span>, <span class="description__text_dark">JS</span> и припроцессор <span class="description__text_dark">SCSS</span>.</p>
-					<p>У меня есть небольшое количество работ, можете ознакомиться с ними во вкладке "Работы". Кроме работ, я составил небольшую историю своего обучения с ней вы можете ознакомниться во вкладке "Автобиография".</p>
+					<p>У меня есть небольшое количество работ, можете ознакомиться с ними во вкладке "Работы". Кроме работ, я составил небольшую историю своего обучения с ней вы можете ознакомниться во вкладке "Резюме".</p>
 					</div>
 				</div>
 			</section>
@@ -60,7 +58,7 @@
 		<main class="works js-works js-contents _disable">
 			<div class="works__body">
 				<h1 class="works__title">Работы</h1>
-				<div class="works__subtitle">Репозитории и проекто, что я сделал ранее</div>
+				<div class="works__subtitle">Проекты, которые я сделал ранее</div>
 				<nav class="works__menu">
 					<div class="works__prokladka">
 						<ul class="works__list _hidden">
@@ -86,80 +84,91 @@
 				</div>
 				<div class="works__items items">
 					<!--LendingImage, site1Image, AllSiteImage-->
+					<!--Для определение сылка\картинки в нужное место сортировки, добавляем один из выше перечисленых слов в класс сылки-->
 					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item LendingImage">
 						<img src="img/work_1.png" alt="">
 					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item AllSiteImage">
-						<img src="img/Koala.jpg" alt="">
-					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item LendingImage">
-						<img src="img/work_1.png" alt="">
-					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item AllSiteImage">
-						<img src="img/Koala.jpg" alt="">
-					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item LendingImage">
-						<img src="img/work_1.png" alt="">
-					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item AllSiteImage">
-						<img src="img/Koala.jpg" alt="">
-					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item LendingImage">
-						<img src="img/work_1.png" alt="">
-					</a>
-					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/First-lending/" class="items__item AllSiteImage">
-						<img src="img/Koala.jpg" alt="">
+					<a data-hover='Посмотреть подробнее' href="https://dekapnt.github.io/beta-site-random-phrase/" class="items__item site1Image">
+						<img src="img/work_2.png" alt="">
 					</a>
 				</div>
 			</div>
-		</main>		<main class="resume js-contents  _disable">
-			<div class="resume__body">
-				<h1 class="resume__title">Резюме</h1>
-				<div class="resume__subtitle">Краткое описание моего станоления фронтэнд разработчиком</div>
-				<div class="resume__items items_resume">
-					<div class="items-resume__item">
-						<div class="items-resume__year">
-							<span>24.07.22-31.08.22</span>
-						</div>
-						<div class="items_resume__achievements achievements">
-							<div class="achievements__title">Самое начало учебы</div>
-							<div class="achievements__subtitle">Работы нет</div>
-							<ul class="achievements__list">
-								<li>
-									Изучил разнообразные теги <span class="description__text_dark">HTML</span> и структурирование сайта в целом.
-								</li>
-								<li>
-									Научился работать с <span class="description__text_dark">css</span> и препроцессором <span class="description__text_dark">sass/scss</span>.
-								</li>
-								<li>
-									Быстро и достаточно легко прешёл с <span class="description__text_dark">python'a</span> на <span class="description__text_dark">JavaScript</span>.
-								</li>
-							</ul>
-						</div>
+		</main>
+		<main class="resume js-contents  _disable">
+			<h1 class="resume__title">Резюме</h1>
+			<div class="resume__subtitle">Краткое описание моего станоления фронтэнд разработчиком</div>
+			<div class="resume__items items_resume">
+				<div class="items-resume__item">
+					<div class="items-resume__year">
+						<span>24.07.22-31.08.22</span>
 					</div>
-					<!--2-->
-					<div class="items-resume__item">
-						<div class="items-resume__year">
-							<span>31.08.22-31.09.22</span>
-						</div>
-						<div class="items_resume__achievements achievements">
-							<div class="achievements__title">????</div>
-							<div class="achievements__subtitle">????</div>
-							<ul class="achievements__list">
-								<li>
-									????
-								</li>
-								<li>
-									?????
-								</li>
-								<li>
-									??????
-								</li>
-							</ul>
-						</div>
+					<div class="items_resume__achievements achievements">
+						<div class="achievements__title">Самое начало учебы</div>
+						<div class="achievements__subtitle">Работы нет</div>
+						<ul class="achievements__list">
+							<li>
+								Изучил разнообразные теги <span class="description__text_dark">HTML</span> и структурирование сайта в целом.
+							</li>
+							<li>
+								Научился работать с <span class="description__text_dark">css</span> и препроцессором <span class="description__text_dark">sass/scss</span>.
+							</li>
+							<li>
+								Быстро и достаточно легко прешёл с <span class="description__text_dark">python'a</span> на <span class="description__text_dark">JavaScript</span>.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="items-resume__item">
+					<div class="items-resume__year">
+						<span>31.08.22-31.09.22</span>
+					</div>
+					<div class="items_resume__achievements achievements">
+						<div class="achievements__title">????</div>
+						<div class="achievements__subtitle">????</div>
+						<ul class="achievements__list">
+							<li>
+								????
+							</li>
+							<li>
+								?????
+							</li>
+							<li>
+								??????
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
+		</main>
+		<main class="contacts js-contents _disable">
+			<div class="contacts__body">
+				<h1 class="contacts__title">Давай пообщаемся!</h1>
+				<div class="contacts__subtitle">Если появились какие-то вопросы, смело пишите мне!</div>
+			</div>
+			<form method="" id="form" class="form">
+				<div class="form__name-title">
+					<div class="form__name-title_name">
+						<label class="form__name_label label" for="us_name">Имя<span class="Works__red-star">*</span></label>
+						<input class="form__name _targerCursor" type="text" id="us_name" name="user_name" placeholder="Напишите ваше имя" required>
+					</div>
+					<div class="form__name-title_title">
+						<label class="form__title_label label" for="us_title">Заголовок<span class="Works__red-star">*</span></label>
+						<select class="form__title" id="us_title" name="user_title" required>
+							<option hidden class="form_grey">Выбрать</option>
+							<option value="error">Ошибка на сайте</option>
+							<option value="work">Вакансия на работу</option>
+							<option value="team">Сотрудничество</option>
+							<option value="other">Другое</option>
+						</select>
+					</div>
+				</div>
+				<label for="us_email" class="form__email_label label">Email<span class="Works__red-star">*</span></label>
+				<input type="text" name="user_email" id="us_email" class="form__email _targerCursor" placeholder="Напишите ваш email" required>
+				<label for="us_text" class="form__text_label label">Сообщение<span class="Works__red-star">*</span></label>
+				<textarea class="form__text _targerCursor" name="user_text" id="us_text" placeholder="Чем я могу вам помочь?"></textarea>
+				<button class="form__btn" type="submit">Отправить</button>
+			</form>
 		</main>	</div>
 	<script src="js/script.js"></script>
 </body>
