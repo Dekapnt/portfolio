@@ -736,6 +736,9 @@ h6 {
     left: 0;
   }
 }
+.items__item._disable {
+  display: none;
+}
 
 .resume {
   -ms-grid-row: 2;
